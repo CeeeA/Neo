@@ -3,7 +3,7 @@
  <head> 
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Gitnang Tanong</title> 
+  <title>To My Love</title> 
   <style>
         body {
             display: flex;
@@ -33,16 +33,16 @@
             border-radius: 5px;
         }
 
-        .yes {
+        .Sure {
             background-color: green;
             color: white;
         }
 
-        .yes:hover {
+        .Sure:hover {
             background-color: darkgreen;
         }
 
-        .no {
+        .Ayaw {
             background-color: red;
             color: white;
             position: relative;
@@ -51,17 +51,17 @@
  </head> 
  <body> 
   <h2>Kiss moko dali?</h2> 
-  <div class="button-container"> <button class="yes" onclick="alert('Kiss Muna ako pls ❤️')">Yes</button> <button class="no" id="noButton">No</button> 
+  <div class="button-container"> <button class="Sure" onclick="alert('Kiss Muna ako pls ❤️')">Sure</button> <button class="Ayaw" id="AyawButton">Ayaw</button> 
   </div> 
   <script>
-        const noButton = document.getElementById("noButton");
+        const noButton = document.getElementById("AyawButton");
 
-        noButton.addEventListener("mouseover", function() {
-            const x = Math.random() * (window.innerWidth - noButton.clientWidth);
-            const y = Math.random() * (window.innerHeight - noButton.clientHeight);
-            noButton.style.position = "absolute";
-            noButton.style.left = `${x}px`;
-            noButton.style.top = `${y}px`;
+        AyawButton.addEventListener("mouseover", function() {
+            const x = Math.random() * (window.innerWidth - AyawButton.clientWidth);
+            const y = Math.random() * (window.innerHeight - AyawButton.clientHeight);
+            AyawButton.style.position = "absolute";
+            AyawButton.style.left = `${x}px`;
+            AyawButton.style.top = `${y}px`;
         });
     </script> 
  </body>
